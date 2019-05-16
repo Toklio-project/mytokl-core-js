@@ -49,7 +49,7 @@ async function t1()
 			"0", 1, "24658", 10
 			// fee_per_kb__string, priority, fee_per_b__string, optl__fork_version
 		));
-		console.log("estimated_tx_network_fee", mymonero.monero_amount_format_utils.formatMoneyFull(fee), "XMR")
+		console.log("estimated_tx_network_fee", mymonero.monero_amount_format_utils.formatMoneyFull(fee), "TOKL")
 	} catch (e) {
 		console.log(e)
 	}

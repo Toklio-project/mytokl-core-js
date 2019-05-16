@@ -1,6 +1,6 @@
 <html>
 	<head>
-		<script src="mymonero-core.js"></script>
+		<script src="mytokl-core.js"></script>
 		<script>
 
 			var assert = {}
@@ -11,10 +11,10 @@
 				return a != b
 			}
 
-			const mymonero_core_js = window.mymonero_core_js
-			var nettype = mymonero_core_js.nettype_utils.network_type.MAINNET;
+			const mytokl_core_js = window.mytokl_core_js
+			var nettype = mytokl_core_js.nettype_utils.network_type.MAINNET;
 
-			mymonero_core_js.monero_utils_promise.catch(function(e)
+			mytokl_core_js.monero_utils_promise.catch(function(e)
 			{
 				console.log("err", e)
 			}).then(function(monero_utils)

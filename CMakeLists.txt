@@ -8,11 +8,11 @@ include_directories("build/boost/include") # must exist already - run bin/build-
 #
 include_directories("src")
 #
-set(MYMONERO_CORE_CPP "src/submodules/mymonero-core-cpp")
+set(MYMONERO_CORE_CPP "src/submodules/mytokl-core-cpp")
 set(MYMONERO_CORE_CPP_SRC "${MYMONERO_CORE_CPP}/src")
 include_directories("${MYMONERO_CORE_CPP}/src")
 #
-set(MONERO_SRC "${MYMONERO_CORE_CPP}/contrib/monero-core-custom")
+set(MONERO_SRC "${MYMONERO_CORE_CPP}/contrib/tokl-core-custom")
 include_directories(${MONERO_SRC})
 include_directories("${MONERO_SRC}/epee/include")
 include_directories("${MONERO_SRC}/common")

@@ -1,19 +1,19 @@
 {
-  "name": "mymonero-core-js",
+  "name": "mytokl-core-js",
   "version": "1.1.0",
-  "description": "The JS library containing the Monero crypto plus lightweight wallet functions behind the official MyMonero apps",
+  "description": "The JS library containing the Toklio crypto plus lightweight wallet functions behind the official MyTokl apps",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mymonero/mymonero-core-js.git"
+    "url": "git+https://github.com/Toklio-project/mytokl-core-js.git"
   },
   "scripts": {
     "format": "find . -name '*.js*' | xargs prettier --write --config ./.prettierrc --config-precedence file-override",
     "test": "mocha"
   },
   "keywords": [
-    "monero",
-    "mymonero",
+    "toklio",
+    "mytokl",
     "javascript",
     "js",
     "lightweight",

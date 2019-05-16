@@ -49,7 +49,7 @@ This readme is located at `README.md`, and the license is located at `LICENSE.tx
 
 ## Usage
 
-If you would like to package this library to run in a standalone manner within, e.g. a webpage, similarly to how the old mymonero.com used this library, a script is provided to bundle everything for you. It's located at `bin/package_browser_js`. If you package the library in this manner, the resulting `mymonero-core.js` file can be included via a script tag. The index.js of the library will then be available as the global variable `mymonero_core_js`.
+If you would like to package this library to run in a standalone manner within, e.g. a webpage, similarly to how the old mymonero.com used this library, a script is provided to bundle everything for you. It's located at `bin/package_browser_js`. If you package the library in this manner, the resulting `mymonero-core.js` file can be included via a script tag. The index.js of the library will then be available as the global variable `mytokl_core_js`.
 
 Alternatively you can bundle the contents in any other manner you prefer, including directly accessing them via your favorite module system. 
 
@@ -107,7 +107,7 @@ Used extensively for managing Monero amounts in atomic units to ensure precision
 #### Examples
 
 ```
-const JSBigInt = require('../mymonero_core_js/cryptonote_utils/biginteger').BigInteger
+const JSBigInt = require('../mytokl_core_js/cryptonote_utils/biginteger').BigInteger
 const amount = new JSBigInt('12300000')
 const amount_str = monero_amount_format_utils.formatMoney(amount)
 ```
@@ -163,8 +163,8 @@ One of the callbacks to this function, `status_update_fn`, supplies status updat
 #### Examples
 
 ```
-const mymonero = require("mymonero_core_js/index");
-// or just "mymonero_core_js/monero_utils/MyMoneroCoreBridge"
+const mymonero = require("mytokl_core_js/index");
+// or just "mytokl_core_js/monero_utils/MyMoneroCoreBridge"
 async function foo()
 {
 	const monero_utils = await mymonero.monero_utils_promise;
