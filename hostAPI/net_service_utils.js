@@ -103,8 +103,8 @@ function _new_requestOptions_base(methodName, completeURL, json_parameters) {
 			Accept: "application/json",
 		},
 		json: json_parameters,
-		useXDR: true, // CORS
-		withCredentials: true, // CORS
+		useXDR: false, // CORS
+		withCredentials: false, // CORS
 	};
 }
 function _new_HTTPRequestHandlerFunctionCallingFn(fn) {
