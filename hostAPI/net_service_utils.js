@@ -92,7 +92,7 @@ exports.HTTPRequest = HTTPRequest;
 function _new_APIAddress_baseURLString(
 	apiAddress_authority, // authority means [subdomain.]host.…[:…]
 ) {
-	return "https" + "://" + apiAddress_authority + "/";
+	return "http" + "://" + apiAddress_authority + "/";
 }
 function _new_requestOptions_base(methodName, completeURL, json_parameters) {
 	return {
